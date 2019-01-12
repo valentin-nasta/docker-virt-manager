@@ -12,8 +12,7 @@ docker run -d \
     djaydev/docker-virt-manager
 ```
 
-    Where:
-
+Where:
 - `/docker/appdata/virt-manager`: This is where the application stores its configuration, log and any files needing persistency.
 - `Port 5900` for VNC client connection
 - `/dev/urandom`: not sure but didn't work on my server until added
