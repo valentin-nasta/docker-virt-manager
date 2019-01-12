@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Virt-Manager</Name>
-  <Repository>docker-virtmanager</Repository>
+  <Repository>djaydev/docker-virt-manager</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
