@@ -1,7 +1,10 @@
 # docker-virt-manager
 Virt-Manager docker container w/WebGUI and VNC access
+
 Virt-Manager version from github
+
 Base image used: jlesage/baseimage-gui:alpine-3.8
+
 ```
 docker run -d \
     --name=virt-manager \
