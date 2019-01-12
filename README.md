@@ -14,9 +14,9 @@ docker run -d \
 
     Where:
 
-- `/docker/appdata/virt-manager: This is where the application stores its configuration, log and any files needing persistency.
-- `Port 5900 for VNC client connection
-- `/dev/urandom: not sure but didn't work on my server until added
+- `/docker/appdata/virt-manager`: This is where the application stores its configuration, log and any files needing persistency.
+- `Port 5900` for VNC client connection
+- `/dev/urandom`: not sure but didn't work on my server until added
 
 Browse to http://your-host-ip:5800 to access the HandBrake GUI. Files from the host appear under the /storage folder in the container.
 
