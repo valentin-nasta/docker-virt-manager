@@ -20,7 +20,7 @@ Where:
 - `Port 5900` for VNC client connection
 - `/dev/urandom`: not sure but didn't work on my server until added
 
-Browse to http://your-host-ip:5800 to access the Virt-Manager GUI. Files from the host appear under the /storage folder in the container.
+Browse to http://your-host-ip:5800 to access the Virt-Manager GUI.
 
 ### Environment Variables
 Some environment variables can be set to customize the behavior of the container and its application. The following list give more details about them available at https://github.com/jlesage/docker-baseimage-gui
