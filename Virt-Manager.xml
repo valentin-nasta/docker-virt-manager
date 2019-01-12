@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Virt-Manager</Name>
+  <Repository>docker-virtmanager</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project/>
+  <Overview>The virt-manager application is a desktop user interface for managing virtual machines through libvirt. It primarily targets KVM VMs, but also manages Xen and LXC (linux containers). It presents a summary view of running domains, their live performance &amp;amp; resource utilization statistics. Wizards enable the creation of new domains, and configuration &amp;amp; adjustment of a domain&#x2019;s resource allocation &amp;amp; virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</Overview>
+  <Category>Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/djaydev/docker-virt-manager/master/virtmanager.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1547323204</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The virt-manager application is a desktop user interface for managing virtual machines through libvirt. It primarily targets KVM VMs, but also manages Xen and LXC (linux containers). It presents a summary view of running domains, their live performance &amp;amp; resource utilization statistics. Wizards enable the creation of new domains, and configuration &amp;amp; adjustment of a domain&#x2019;s resource allocation &amp;amp; virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7800</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7900</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/dev/urandom</HostDir>
+      <ContainerDir>/dev/urandom</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/docker/appdata/virt-manager/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>America/NewYork</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>en_US.UTF-8</Value>
+      <Name>LANG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1280</Value>
+      <Name>DISPLAY_WIDTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>768</Value>
+      <Name>DISPLAY_HEIGHT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>KEEP_APP_RUNNING</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="/dev/urandom" Target="/dev/urandom" Default="/dev/urandom" Mode="ro" Description="Container Path: /dev/urandom" Type="Path" Display="always" Required="false" Mask="false">/dev/urandom</Config>
+  <Config Name="webvnc" Target="5800" Default="5800" Mode="tcp" Description="webvnc container port 5800" Type="Port" Display="always" Required="false" Mask="false">7800</Config>
+  <Config Name="vnc" Target="5900" Default="5900" Mode="tcp" Description="vnc container port 5900" Type="Port" Display="always" Required="false" Mask="false">7900</Config>
+  <Config Name="Timezone" Target="TZ" Default="America/Chicago" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="true" Mask="false">America/NewYork</Config>
+  <Config Name="Language 1" Target="LANG" Default="en_US.UTF-8" Mode="" Description="Container Variable: LANG" Type="Variable" Display="always" Required="true" Mask="false">en_US.UTF-8</Config>
+  <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">1280</Config>
+  <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">768</Config>
+  <Config Name="KEEP_APP_RUNNING" Target="KEEP_APP_RUNNING" Default="" Mode="" Description="KEEP_APP_RUNNING" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Host Path 2" Target="/config" Default="" Mode="rw" Description="Container Path:  /config" Type="Path" Display="always" Required="false" Mask="false">/docker/appdata/virt-manager/config</Config>
+</Container>
