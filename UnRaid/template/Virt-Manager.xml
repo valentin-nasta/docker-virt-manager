@@ -84,5 +84,5 @@
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">1280</Config>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">768</Config>
   <Config Name="KEEP_APP_RUNNING" Target="KEEP_APP_RUNNING" Default="" Mode="" Description="KEEP_APP_RUNNING" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
-  <Config Name="Host Path 2" Target="/config" Default="" Mode="rw" Description="Container Path:  /config" Type="Path" Display="always" Required="false" Mask="false">/docker/appdata/virt-manager/config</Config>
+  <Config Name="Host Path 2" Target="/config" Default="" Mode="rw" Description="For persistent KVM server connections" Type="Path" Display="always" Required="false" Mask="false">/docker/appdata/virt-manager/config</Config>
 </Container>
