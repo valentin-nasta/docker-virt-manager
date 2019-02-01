@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
+  <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
   <Project/>
   <Overview>The virt-manager application is a desktop user interface for managing virtual machines through libvirt. It primarily targets KVM VMs, but also manages Xen and LXC (linux containers). It presents a summary view of running domains, their live performance &amp;amp; resource utilization statistics. Wizards enable the creation of new domains, and configuration &amp;amp; adjustment of a domain&#x2019;s resource allocation &amp;amp; virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</Overview>
   <Category>Tools: Status:Beta</Category>
