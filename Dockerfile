@@ -13,7 +13,7 @@ RUN apk --update --upgrade add \
 	grep libvirt-glib py-urlgrabber py-ipaddr py3-libvirt \
 	py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
 	py2-gobject3 perl-dev file git openssh-askpass \
-   && rm -rf /var/cache/apk/*
+   && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
 
 #download virt-manager from git
 RUN git clone https://github.com/virt-manager/virt-manager.git
