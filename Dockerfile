@@ -6,13 +6,13 @@ RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
 
 # Install packages.
 RUN apk --update --upgrade add \
-	bash \
-    libressl-dev \ 
-    py3-gobject3 libosinfo libxml2 build-base python3 gtk+3.0 vte3 py3-libxml2 spice-gtk gtk-vnc>=0.5.2-r2 libosinfo ttf-dejavu gnome-icon-theme dconf intltool grep libvirt-glib py-urlgrabber py-ipaddr py3-libvirt py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna py2-gobject3 perl-dev file git \
-    openssh \
-    xterm \
-	dbus-x11 \
-	openssh-askpass \
+	bash libressl-dev openssh xterm dbus-x11 \
+	py3-gobject3 libosinfo libxml2 build-base python3 \
+	gtk+3.0 vte3 py3-libxml2 spice-gtk gtk-vnc>=0.5.2-r2 \
+	libosinfo ttf-dejavu gnome-icon-theme dconf intltool \
+	grep libvirt-glib py-urlgrabber py-ipaddr py3-libvirt \
+	py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
+	py2-gobject3 perl-dev file git openssh-askpass \
    && rm -rf /var/cache/apk/*
 
 #download virt-manager from git
