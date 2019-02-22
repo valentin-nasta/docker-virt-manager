@@ -1,5 +1,5 @@
 # Pull base image.
-FROM jlesage/baseimage-gui:alpine-3.8
+FROM jlesage/baseimage-gui:alpine-3.9
 
 # add testing repo for ssh-askpass
 RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
