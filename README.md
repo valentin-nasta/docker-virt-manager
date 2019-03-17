@@ -3,7 +3,7 @@ Virt-Manager docker container w/ WebGUI and VNC access
 
 Virt-Manager latest version from github
 
-Base image used: jlesage/baseimage-gui:alpine-3.8
+Base image used: jlesage/baseimage-gui:alpine-3.9
 
 ```
 docker run -d \
