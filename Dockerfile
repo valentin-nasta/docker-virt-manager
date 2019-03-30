@@ -31,6 +31,7 @@ RUN \
 
 # Copy the start script.
 COPY startapp.sh /startapp.sh
+RUN chmod +x /startapp.sh
 
 # Set the name of the application.
 ENV APP_NAME="virt-manager"
