@@ -1,7 +1,7 @@
 # Pull base image.
 FROM jlesage/baseimage-gui:alpine-3.9
 
-# add testing repo for ssh-askpass
+# Add testing repo for ssh-askpass
 RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 
 # Install packages.
@@ -15,13 +15,13 @@ RUN apk --update --upgrade add \
 	py2-gobject3 perl-dev file git openssh-askpass \
    && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
 
-#download virt-manager from git
+# Download virt-manager from git
 RUN git clone https://github.com/virt-manager/virt-manager.git
 
-#install virt-manager with script from developer
+# Install virt-manager with script from developer
 RUN cd virt-manager && ./setup.py install
 
-#Virt-manager wants ssh-askpass without "gtk" in the name, adds 9.7KB to the total container size
+# Virt-manager wants ssh-askpass without "gtk" in the name, adds 9.7KB to the total container size
 RUN cp /usr/lib/ssh/gtk-ssh-askpass /usr/lib/ssh/ssh-askpass
 
 # Generate and install favicons.
@@ -36,6 +36,5 @@ RUN chmod +x /startapp.sh
 # Set the name of the application.
 ENV APP_NAME="virt-manager"
 
-#clean up some build packages no longer needed
+# Clean up some build packages no longer needed
 RUN apk del gcc g++ build-base perl-dev git
-
