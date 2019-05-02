@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Virt-Manager</Name>
   <Repository>djaydev/docker-virt-manager</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/djaydev/docker-virt-manager</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
