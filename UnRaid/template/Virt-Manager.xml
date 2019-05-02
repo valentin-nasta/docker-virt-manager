@@ -50,16 +50,6 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>America/NewYork</Value>
-      <Name>TZ</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>en_US.UTF-8</Value>
-      <Name>LANG</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
       <Value>1280</Value>
       <Name>DISPLAY_WIDTH</Name>
       <Mode/>
@@ -79,8 +69,6 @@
   <Config Name="/dev/urandom" Target="/dev/urandom" Default="/dev/urandom" Mode="ro" Description="Container Path: /dev/urandom" Type="Path" Display="always" Required="false" Mask="false">/dev/urandom</Config>
   <Config Name="webvnc" Target="5800" Default="5800" Mode="tcp" Description="webvnc container port 5800" Type="Port" Display="always" Required="false" Mask="false">7800</Config>
   <Config Name="vnc" Target="5900" Default="5900" Mode="tcp" Description="vnc container port 5900" Type="Port" Display="always" Required="false" Mask="false">7900</Config>
-  <Config Name="Timezone" Target="TZ" Default="America/Chicago" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="true" Mask="false">America/NewYork</Config>
-  <Config Name="Language 1" Target="LANG" Default="en_US.UTF-8" Mode="" Description="Container Variable: LANG" Type="Variable" Display="always" Required="true" Mask="false">en_US.UTF-8</Config>
   <Config Name="Display Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">1280</Config>
   <Config Name="Display Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">768</Config>
   <Config Name="KEEP_APP_RUNNING" Target="KEEP_APP_RUNNING" Default="" Mode="" Description="KEEP_APP_RUNNING" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
