@@ -4,7 +4,7 @@
   <Repository>djaydev/handbrake</Repository>
   <Registry>https://hub.docker.com/r/djaydev/handbrake/</Registry>
   <Network>bridge</Network>
-   <Beta>True</Beta>
+  <Beta>True</Beta>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
   <Overview>
