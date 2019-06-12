@@ -1,3 +1,3 @@
 #!/bin/sh
 export HOME=/config
-exec /usr/bin/virt-manager --no-fork
+exec /usr/local/bin/virt-manager --no-fork
