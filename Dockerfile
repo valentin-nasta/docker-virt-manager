@@ -8,7 +8,8 @@ RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
 RUN apk --update --upgrade add \
 	bash libressl-dev openssh xterm dbus-x11 \
 	py3-gobject3 libosinfo libxml2 build-base python3 \
-	gtk+3.0-dev vte3 py3-libxml2 spice-gtk gtk-vnc>=0.5.2-r2 \
+	gtk+3.0-dev gtksourceview4-dev dbus-glib-dev libgudev-dev\
+	dbus-glib-dev vte3 py3-libxml2 spice-gtk gtk-vnc>=0.5.2-r2 \
 	ttf-dejavu gnome-icon-theme dconf intltool grep \
 	libvirt-glib py-urlgrabber py-ipaddr py3-libvirt \
 	py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
