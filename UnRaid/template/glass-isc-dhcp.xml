@@ -36,7 +36,23 @@
   <CPUset/>
   <DonateText/>
   <DonateLink/>
-  <Description/>
+  <Description>
+  [span style='color: red;'][b]*Advanced Users*[/b][/span]
+  [br]
+    Includes ISC DHCP Server and Glass Web Management tool.
+    [br][br]
+    The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side). Default port 3000.
+    [br][br][span][/span]
+    For more info on Glass, see
+    [a href="https://github.com/Akkadius/glass-isc-dhcp#features"]
+    https://github.com/Akkadius/glass-isc-dhcp#features[/a].
+    [br][br][span][/span]
+    [span style='color: red;'][b]NOTE:[/b][/span] Requires DHCP server config file in appdata/glass-isc-dhcp folder. For a sample config file, see
+    [a href="https://github.com/djaydev/docker-glass-isc-dhcp/blob/master/sample.dhcpd.conf"]
+    https://github.com/djaydev/docker-glass-isc-dhcp/blob/master/sample.dhcpd.conf[/a].
+    [br][br][span][/span]
+    Host or Custom brX networking is recommended.
+  </Description>
   <Networking>
     <Mode>host</Mode>
     <Publish/>
