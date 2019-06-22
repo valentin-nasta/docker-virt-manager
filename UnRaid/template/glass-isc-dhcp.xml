@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>glass-isc-dhcp</Name>
-  <Beta>True</Beta>
   <Repository>djaydev/glass-isc-dhcp</Repository>
   <Registry>https://hub.docker.com/r/djaydev/glass-isc-dhcp</Registry>
   <Network>host</Network>
@@ -11,8 +10,6 @@
   <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
   <Project>https://github.com/Akkadius/glass-isc-dhcp</Project>
   <Overview>
-  [span style='color: red;'][b]*Advanced Users*[/b][/span]
-  [br]
     Includes ISC DHCP Server and Glass Web Management tool.
     [br][br]
     The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side). Default port 3000.
@@ -27,18 +24,7 @@
     [br][br][span][/span]
     Host or Custom brX networking is recommended.
   </Overview>
-  <Category>Tools:</Category>
-  <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/djaydev/docker-virt-manager/master/UnRaid/template/glass-isc-dhcp.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/Akkadius/glass-isc-dhcp/master/public/images/glass_logo.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DonateText/>
-  <DonateLink/>
   <Description>
-  [span style='color: red;'][b]*Advanced Users*[/b][/span]
-  [br]
     Includes ISC DHCP Server and Glass Web Management tool.
     [br][br]
     The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side). Default port 3000.
@@ -53,6 +39,15 @@
     [br][br][span][/span]
     Host or Custom brX networking is recommended.
   </Description>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/djaydev/docker-virt-manager/master/UnRaid/template/glass-isc-dhcp.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Akkadius/glass-isc-dhcp/master/public/images/glass_logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
   <Networking>
     <Mode>host</Mode>
     <Publish/>

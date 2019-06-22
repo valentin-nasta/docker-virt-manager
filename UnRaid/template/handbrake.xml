@@ -4,7 +4,6 @@
   <Repository>djaydev/handbrake</Repository>
   <Registry>https://hub.docker.com/r/djaydev/handbrake/</Registry>
   <Network>bridge</Network>
-  <Beta>True</Beta>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
   <Overview>
@@ -50,7 +49,6 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
 [i]Advanced View[/i] is enabled). For example, if your optical drive is at
 [b][i]/dev/sr0[/i][/b], you need to add [b][i]--device /dev/sr0[/i][/b].
   </Description>
-  <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
   <Date>2019-05-04</Date>
   <Networking>
