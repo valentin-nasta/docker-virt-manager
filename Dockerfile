@@ -42,7 +42,7 @@ RUN cp /usr/lib/ssh/gtk-ssh-askpass /usr/lib/ssh/ssh-askpass
 # Generate and install favicons.
 RUN \
     APP_ICON_URL=https://www.alteeve.com/w/images/2/26/Striker01-v2.0-virtual-machine-manager_icon.png && \
-    install_app_icon.sh "$APP_ICON_URL" && \
+    install_app_icon.sh "$APP_ICON_URL" \
     && rm -rf /var/cache/apk/*
 
 # Copy the start script.
