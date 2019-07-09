@@ -24,11 +24,9 @@ RUN cd virt-manager && ./setup.py configure --prefix=/usr/local && ./setup.py in
 # Pull base image.
 FROM jlesage/baseimage-gui:alpine-3.9
 
-# Add testing repo for ssh-askpass
-RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
-
-# Add community repo for some python packages
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories
+# Add testing repo for ssh-askpass, add community repo for some python packages
+RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+		echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories
 
 # Install packages.
 RUN apk --update --upgrade add \
@@ -44,7 +42,8 @@ RUN cp /usr/lib/ssh/gtk-ssh-askpass /usr/lib/ssh/ssh-askpass
 # Generate and install favicons.
 RUN \
     APP_ICON_URL=https://www.alteeve.com/w/images/2/26/Striker01-v2.0-virtual-machine-manager_icon.png && \
-    install_app_icon.sh "$APP_ICON_URL"
+    install_app_icon.sh "$APP_ICON_URL" && \
+		&& rm -rf /var/cache/apk/*
 
 # Copy the start script.
 COPY startapp.sh /startapp.sh
