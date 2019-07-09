@@ -34,7 +34,7 @@ RUN apk --update --upgrade add \
 		py-ipaddr virt-manager-common openssh-askpass \
 		libressl py-urlgrabber dconf grep file openssh \
 		dbus-x11 gtksourceview4 gnome-icon-theme adwaita-icon-theme \
-   && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
+		&& rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
 
 # Virt-manager wants ssh-askpass without "gtk" in the name, adds 9.7KB to the total container size
 RUN cp /usr/lib/ssh/gtk-ssh-askpass /usr/lib/ssh/ssh-askpass
@@ -43,7 +43,7 @@ RUN cp /usr/lib/ssh/gtk-ssh-askpass /usr/lib/ssh/ssh-askpass
 RUN \
     APP_ICON_URL=https://www.alteeve.com/w/images/2/26/Striker01-v2.0-virtual-machine-manager_icon.png && \
     install_app_icon.sh "$APP_ICON_URL" && \
-		&& rm -rf /var/cache/apk/*
+    && rm -rf /var/cache/apk/*
 
 # Copy the start script.
 COPY startapp.sh /startapp.sh
