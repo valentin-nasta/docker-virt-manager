@@ -26,7 +26,7 @@ FROM jlesage/baseimage-gui:alpine-3.9
 
 # Add testing repo for ssh-askpass, add community repo for some python packages
 RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
-		echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories
+		echo "http://dl-3.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories
 
 # Install packages.
 RUN apk --update --upgrade add \
