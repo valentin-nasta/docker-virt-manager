@@ -6,14 +6,14 @@ RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
 
 # Install packages.
 RUN apk --update --upgrade add \
-		bash libressl-dev openssh xterm dbus-x11 \
-		py3-gobject3 libosinfo libxml2 build-base python3 \
-		gtk+3.0-dev vte3 py3-libxml2 spice-gtk gtk-vnc \
-		ttf-dejavu gnome-icon-theme dconf intltool grep \
-		libvirt-glib py-urlgrabber py-ipaddr py3-libvirt \
-		py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
-		py2-gobject3 perl-dev file git openssh-askpass \
-		&& rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
+    bash libressl-dev openssh xterm dbus-x11 \
+    py3-gobject3 libosinfo libxml2 build-base python3 \
+    gtk+3.0-dev vte3 py3-libxml2 spice-gtk gtk-vnc \
+    ttf-dejavu gnome-icon-theme dconf intltool grep \
+    libvirt-glib py-urlgrabber py-ipaddr py3-libvirt \
+    py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
+    py2-gobject3 perl-dev file git openssh-askpass \
+    && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
 
 # Download virt-manager from git
 RUN git clone https://github.com/virt-manager/virt-manager.git
@@ -26,15 +26,15 @@ FROM jlesage/baseimage-gui:alpine-3.9
 
 # Add testing repo for ssh-askpass, add community repo for some python packages
 RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
-		echo "http://dl-3.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories
+    echo "http://dl-3.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories
 
 # Install packages.
 RUN apk --update --upgrade add \
-		bash py3-configparser py3-libvirt py3-libxml2 \
-		py-ipaddr virt-manager-common openssh-askpass \
-		libressl py-urlgrabber dconf grep file openssh \
-		dbus-x11 gtksourceview4 gnome-icon-theme adwaita-icon-theme \
-		&& rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
+bash py3-configparser py3-libvirt py3-libxml2 \
+    py-ipaddr virt-manager-common openssh-askpass \
+    libressl py-urlgrabber dconf grep file openssh \
+    dbus-x11 gtksourceview4 gnome-icon-theme adwaita-icon-theme \
+    && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
 
 # Virt-manager wants ssh-askpass without "gtk" in the name, adds 9.7KB to the total container size
 RUN cp /usr/lib/ssh/gtk-ssh-askpass /usr/lib/ssh/ssh-askpass
