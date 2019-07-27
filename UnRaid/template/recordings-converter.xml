@@ -74,7 +74,7 @@
   <Config Name="Host Key 1" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="Host Key 2" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="Host Key 3" Target="ENCODER" Default="" Mode="" Description="&amp;lt;b&amp;gt;nvidia&amp;lt;/b&amp;gt; = Nvdia gpu HW transcoding |&#13;&#10;&amp;lt;b&amp;gt;intel&amp;lt;/b&amp;gt; = Intel gpu HW transcoding |&#13;&#10;&amp;lt;b&amp;gt;software&amp;lt;/b&amp;gt; = cpu SW transcoding |&#13;&#10;&amp;lt;b&amp;gt;custom&amp;lt;/b&amp;gt; = your own script in /config/custom.sh" Type="Variable" Display="always" Required="false" Mask="false">software</Config>
-  <Config Name="Host Key 4" Target="DELETE_TS" Default="" Mode="" Description="Delete original recording after conversion, 0 = no, 1 = yes" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Host Key 4" Target="DELETE_TS" Default="" Mode="" Description="Delete original recording after conversion, 0 = no, 1 = yes" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="Host Key 5" Target="UMASK" Default="" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
   <Config Name="Host Key 6" Target="SUBTITLES" Default="" Mode="" Description="Include subtitles from recording's Closed Captions. 0 = no, 1 = yes" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
 </Container>
