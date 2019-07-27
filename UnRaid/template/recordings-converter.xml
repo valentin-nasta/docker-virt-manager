@@ -10,7 +10,7 @@
   <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
   <Project/>
   <Overview>Watches for .ts files made by live TV recordings and converts them to h265 .mp4 files automatically.[br][br] Instructions at [a href="https://github.com/djaydev/docker-recordings-transcoder"]https://github.com/djaydev/docker-recordings-transcoder[/a]</Overview>
-  <Category>MediaApp:Video</Category>
+  <Category>MediaApp:Video Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/djaydev/docker-recordings-transcoder/master/icon.png</Icon>
