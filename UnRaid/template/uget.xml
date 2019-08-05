@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
   <Project>https://ugetdm.com/</Project>
-  <Overview>uGet can download videos from YouTube and a variety of different protocols including HTTP, HTTPS, FTP, BitTorrent, and Metalinks. To enable bittorrent support set plug-in matching order to curl + aria2 in settings, then restart the container.
+  <Overview>uGet can download from a variety of different protocols including HTTP, HTTPS, FTP, BitTorrent, Youtube and Metalinks. To enable bittorrent support set plug-in matching order to curl + aria2 in settings, then restart the container.
   </Overview>
   <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
@@ -20,7 +20,7 @@
   <CPUset/>
   <DonateText/>
   <DonateLink/>
-  <Description>uGet can download videos from YouTube and a variety of different protocols including HTTP, HTTPS, FTP, BitTorrent, and Metalinks. To enable bittorrent support set plug-in matching order to curl + aria2 in settings, then restart the container.
+  <Description>uGet can download from a variety of different protocols including HTTP, HTTPS, FTP, BitTorrent, Youtube and Metalinks. To enable bittorrent support set plug-in matching order to curl + aria2 in settings, then restart the container.
   </Description>
   <Networking>
     <Mode>bridge</Mode>
