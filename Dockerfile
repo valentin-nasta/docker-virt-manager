@@ -47,7 +47,6 @@ RUN \
 
 # Copy the start script.
 COPY startapp.sh /startapp.sh
-RUN chmod +x /startapp.sh
 
 # Copy Virt-Manager from base build image.
 COPY --from=builder /usr/local /usr/local
