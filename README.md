@@ -6,7 +6,8 @@ Virt-Manager latest version from github
 
 Base image used: jlesage/baseimage-gui:alpine-3.9
 
-```docker run -d \
+```shell
+    docker run -d \
     --name=virt-manager \
     -p 5800:5800 \
     -p 5900:5900 \
