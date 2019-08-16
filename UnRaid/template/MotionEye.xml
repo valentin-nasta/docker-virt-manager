@@ -9,13 +9,11 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
   <Project>https://github.com/ccrisan/motioneye/wiki</Project>
-  <Overview>MotionEye is a web frontend for the motion daemon, written in Python.&amp;lt;br /&amp;gt;&#xD;
-Being based on Alpine Linux, size of this container is very small (less than 100MB in download size).&#xD;
-&amp;lt;br /&amp;gt;&#xD;
-First run will start with motioneye default settings. To use a preconfigured configuration file save it /mnt/cache/appdata/motioneye/motioneye.conf.&amp;lt;br /&amp;gt;&#xD;
-&amp;lt;br /&amp;gt;&#xD;
-Default Username: admin&amp;lt;br /&amp;gt;&#xD;
-Default Password: BLANK&amp;lt;br /&amp;gt;</Overview>
+  <Overview>MotionEye is a web frontend for the motion daemon, written in Python.[br]
+Being based on Alpine Linux, size of this container is very small (less than 100MB in download size).[br]
+First run will start with motioneye default settings. To use a preconfigured configuration file save it /mnt/cache/appdata/motioneye/motioneye.conf.[br][br]
+Default Username: admin[br]
+Default Password: BLANK[br]</Overview>
   <Category>Network: Media Servers:</Category>
   <WebUI>http://[IP]:[PORT:8765]</WebUI>
   <TemplateURL/>
@@ -25,13 +23,11 @@ Default Password: BLANK&amp;lt;br /&amp;gt;</Overview>
   <CPUset/>
   <DonateText/>
   <DonateLink/>
-  <Description>MotionEye is a web frontend for the motion daemon, written in Python.&amp;lt;br /&amp;gt;&#xD;
-Being based on Alpine Linux, size of this container is very small (less than 100MB in download size).&#xD;
-&amp;lt;br /&amp;gt;&#xD;
-First run will start with motioneye default settings. To use a preconfigured configuration file save it /mnt/appdata/motioneye/motioneye.conf.&amp;lt;br /&amp;gt;&#xD;
-&amp;lt;br /&amp;gt;&#xD;
-Default Username: admin&amp;lt;br /&amp;gt;&#xD;
-Default Password: BLANK&amp;lt;br /&amp;gt;</Description>
+  <Description>MotionEye is a web frontend for the motion daemon, written in Python.[br]
+Being based on Alpine Linux, size of this container is very small (less than 100MB in download size).[br]
+First run will start with motioneye default settings. To use a preconfigured configuration file save it /mnt/cache/appdata/motioneye/motioneye.conf.[br][br]
+Default Username: admin[br]
+Default Password: BLANK[br]</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
