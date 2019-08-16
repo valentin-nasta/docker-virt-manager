@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
   <Project/>
-  <Overview>Watches for .ts files made by live TV recordings and converts them to h265 .mp4 files automatically.[br][br] Instructions at [a href="https://github.com/djaydev/docker-recordings-transcoder"]https://github.com/djaydev/docker-recordings-transcoder[/a]</Overview>
+  <Overview>Watches for .ts files made by live TV recordings and converts them to h265 .mp4 files automatically. Supports Nvidia and Intel HW transcoding.[br][br] Instructions at [a href="https://github.com/djaydev/docker-recordings-transcoder"]https://github.com/djaydev/docker-recordings-transcoder[/a]</Overview>
   <Category>MediaApp:Video Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
@@ -19,7 +19,7 @@
   <CPUset/>
   <DonateText/>
   <DonateLink/>
-  <Description>Watches for .ts files made by live TV recordings and converts them to h265 .mp4 files automatically. Instructions at [a href="https://github.com/djaydev/docker-recordings-transcoder"]https://github.com/djaydev/docker-recordings-transcoder[/a]</Description>
+  <Description>Watches for .ts files made by live TV recordings and converts them to h265 .mp4 files automatically. Supports Nvidia and Intel HW transcoding. Instructions at [a href="https://github.com/djaydev/docker-recordings-transcoder"]https://github.com/djaydev/docker-recordings-transcoder[/a]</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
