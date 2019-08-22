@@ -219,4 +219,6 @@ device (usually [b][i]/dev/sr0[/i][/b]) by adding the parameter
   <!-- Port Mappings -->
   <Config Name="WEB Port for GUI" Target="5800" Default="7803" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="VNC Port for GUI" Target="5900" Default="7903" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol.  Optional if no VNC client is used." Type="Port" Display="advanced-hide" Required="false" Mask="false"/>
+  <DonateLink>https://www.paypal.me/djaydev/0usd</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
 </Container>

@@ -103,4 +103,6 @@
   <Config Name="Host Path 2" Target="/unraid_unassigned_disks" Default="" Mode="rw,slave" Description="Container Path: /unraid_unassigned_disks" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/</Config>
   <Config Name="Host Path 3" Target="/unraid_shares" Default="" Mode="rw" Description="Container Path: /unraid_shares" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="Host Path 4" Target="/unraid_flashdrive" Default="" Mode="rw" Description="Container Path: /unraid_flashdrive" Type="Path" Display="always" Required="false" Mask="false">/boot/</Config>
+  <DonateLink>https://www.paypal.me/djaydev/0usd</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
 </Container>

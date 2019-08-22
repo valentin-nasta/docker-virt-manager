@@ -70,4 +70,6 @@ Default Password: BLANK[br]</Description>
   <Config Name="WEB UI" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always" Required="false" Mask="false">8765</Config>
   <Config Name="Media Files Path" Target="/var/lib/motioneye" Default="/mnt/user/videos/camera" Mode="rw" Description="Default captured movies folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/videos/camera</Config>
   <Config Name="Configuration Path" Target="/etc/motioneye" Default="/mnt/cache/appdata/motioneye" Mode="rw" Description="Persistent config folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/motioneye</Config>
+  <DonateLink>https://www.paypal.me/djaydev/0usd</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
 </Container>

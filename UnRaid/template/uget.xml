@@ -92,4 +92,6 @@
   <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="Container Path:  /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/uget</Config>
   <Config Name="Host Path 2" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/</Config>
   <Config Name="Host Key 1" Target="THEME" Default="" Mode="" Description="Theme chooser - light or dark" Type="Variable" Display="always" Required="false" Mask="false">light</Config>
+  <DonateLink>https://www.paypal.me/djaydev/0usd</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
 </Container>

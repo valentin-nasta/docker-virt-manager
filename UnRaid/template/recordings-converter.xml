@@ -77,4 +77,6 @@
   <Config Name="Host Key 4" Target="DELETE_TS" Default="" Mode="" Description="Delete original recording after conversion, 0 = no, 1 = yes" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="Host Key 5" Target="UMASK" Default="" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
   <Config Name="Host Key 6" Target="SUBTITLES" Default="" Mode="" Description="Include subtitles from recording's Closed Captions. 0 = no, 1 = yes" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <DonateLink>https://www.paypal.me/djaydev/0usd</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
 </Container>

@@ -87,4 +87,6 @@
   <Config Name="Host Key 1" Target="ADMINPASSWORD" Default="" Mode="" Description="Glass Web Password" Type="Variable" Display="always" Required="false" Mask="false">glassadmin</Config>
   <Config Name="Host Key 2" Target="WEBADMINPORT" Default="" Mode="" Description="Glass Web Port" Type="Variable" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Host Key 3" Target="WEBSOCKETPORT" Default="" Mode="" Description="Glass Websocket Port" Type="Variable" Display="always" Required="false" Mask="false">8080</Config>
+  <DonateLink>https://www.paypal.me/djaydev/0usd</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
 </Container>

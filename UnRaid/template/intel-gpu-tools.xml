@@ -67,4 +67,6 @@
   <Config Name="DISPLAY_WIDTH" Target="DISPLAY_WIDTH" Default="" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">1280</Config>
   <Config Name="DISPLAY_HEIGHT" Target="DISPLAY_HEIGHT" Default="" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">720</Config>
   <Config Name="KEEP_APP_RUNNING" Target="KEEP_APP_RUNNING" Default="" Mode="" Description="When set to 1, the application will be automatically restarted if it crashes or if user quits it." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <DonateLink>https://www.paypal.me/djaydev/0usd</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
 </Container>
