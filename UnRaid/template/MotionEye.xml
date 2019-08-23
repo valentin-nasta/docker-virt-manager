@@ -22,8 +22,6 @@ Default Password: BLANK[br]</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DonateText/>
-  <DonateLink/>
   <Description>MotionEye is a web frontend for the motion daemon, written in Python.[br]
 Being based on Alpine Linux, size of this container is very small (less than 100MB in download size).[br]
 First run will start with motioneye default settings. To use a preconfigured configuration file save it /mnt/cache/appdata/motioneye/motioneye.conf.[br]

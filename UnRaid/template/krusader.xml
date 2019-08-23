@@ -21,8 +21,6 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Krusader is an advanced twin panel (commander style) file manager similar to Midnight or Total Commander. It supports extensive archive handling, mounted filesystem support, advanced search, viewer/editor, directory synchronisation, file content comparisons, batch renaming, etc.
   [br][br]
   The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.

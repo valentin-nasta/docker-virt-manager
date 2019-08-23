@@ -46,8 +46,6 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DonateText/>
-  <DonateLink/>
   <Networking>
     <Mode>host</Mode>
     <Publish/>

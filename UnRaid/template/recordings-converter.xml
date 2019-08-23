@@ -17,8 +17,6 @@
   <ExtraParams></ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Watches for .ts files made by live TV recordings and converts them to h265 .mp4 files automatically. Supports Nvidia and Intel HW transcoding. Instructions at [a href="https://github.com/djaydev/docker-recordings-transcoder"]https://github.com/djaydev/docker-recordings-transcoder[/a]</Description>
   <Networking>
     <Mode>bridge</Mode>
