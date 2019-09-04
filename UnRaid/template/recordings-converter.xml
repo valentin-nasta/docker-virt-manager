@@ -8,7 +8,7 @@
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/77603-virt-manager-intel-gpu-tools-and-more-dockers/</Support>
-  <Project/>
+  <Project>https://github.com/djaydev/docker-recordings-transcoder</Project>
   <Overview>Watches for .ts files made by live TV recordings and converts them to h265 .mp4 files automatically. Supports Nvidia and Intel HW transcoding.[br][br] Instructions at [a href="https://github.com/djaydev/docker-recordings-transcoder"]https://github.com/djaydev/docker-recordings-transcoder[/a]</Overview>
   <Category>MediaApp:Video</Category>
   <WebUI/>
