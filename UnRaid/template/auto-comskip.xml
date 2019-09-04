@@ -44,6 +44,11 @@ Instructions at [a href="https://github.com/djaydev/docker-auto-comskip"]www.git
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+	<Volume>
+      <HostDir>/tmp/comskip</HostDir>
+      <ContainerDir>/tmp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
@@ -61,6 +66,7 @@ Instructions at [a href="https://github.com/djaydev/docker-auto-comskip"]www.git
   <Config Name="Host Path 1" Target="/watch" Default="" Mode="rw" Description="Watch folder, any video copied into this folder will be automatically comskip'ed." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/commercial-vids/watch/</Config>
   <Config Name="Host Path 2" Target="/output" Default="" Mode="rw" Description="Folder where comskip'ed videos should be put." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/videos/comskipped</Config>
   <Config Name="Host Path 3" Target="/config" Default="/mnt/user/appdata/auto-comskip" Mode="rw" Description="config folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/auto-comskip</Config>
+  <Config Name="Host Path 4" Target="/tmp" Default="" Mode="rw" Description="Temporary transcoding location" Type="Path" Display="always" Required="false" Mask="false">/tmp/comskip</Config>
   <Config Name="Host Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="Host Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
