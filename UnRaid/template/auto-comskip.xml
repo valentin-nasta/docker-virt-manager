@@ -44,7 +44,7 @@ Instructions at [a href="https://github.com/djaydev/docker-auto-comskip"]www.git
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-	<Volume>
+    <Volume>
       <HostDir>/tmp/comskip</HostDir>
       <ContainerDir>/tmp</ContainerDir>
       <Mode>rw</Mode>
