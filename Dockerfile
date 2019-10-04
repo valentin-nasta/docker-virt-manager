@@ -9,7 +9,7 @@ RUN apk add \
         ttf-dejavu gnome-icon-theme dconf intltool grep \
         libvirt-glib py3-urlgrabber py3-ipaddr py3-libvirt \
         py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
-        perl-dev file git openssh-askpass && \
+        perl-dev file git && \
     apk add openssh-askpass --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
 
