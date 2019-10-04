@@ -6,14 +6,14 @@ RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
 
 # Install packages.
 RUN apk add \
-		bash libressl-dev xterm dbus-x11 \
-		py3-gobject3 libosinfo libxml2 build-base python3 \
-		gtk+3.0-dev vte3 py3-libxml2 spice-gtk gtk-vnc py3-cairo\
-		ttf-dejavu gnome-icon-theme dconf intltool grep \
-		libvirt-glib py3-urlgrabber py3-ipaddr py3-libvirt \
-		py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
-		perl-dev file git openssh-askpass \
-		&& rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
+        bash libressl-dev xterm dbus-x11 \
+        py3-gobject3 libosinfo libxml2 build-base python3 \
+        gtk+3.0-dev vte3 py3-libxml2 spice-gtk gtk-vnc py3-cairo\
+        ttf-dejavu gnome-icon-theme dconf intltool grep \
+        libvirt-glib py3-urlgrabber py3-ipaddr py3-libvirt \
+        py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
+        perl-dev file git openssh-askpass \
+        && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
 
 # Download virt-manager from git
 RUN git clone https://github.com/virt-manager/virt-manager.git
@@ -30,12 +30,12 @@ RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
 
 # Install packages.
 RUN apk add \
-		py3-configparser py3-libvirt py3-libxml2 \
-		py3-ipaddr virt-manager-common openssh-askpass \
-		bash libressl dconf grep file gtksourceview4 \
-		dbus-x11 gnome-icon-theme adwaita-icon-theme && \
-	apk add py3-urlgrabber --repository http://dl-3.alpinelinux.org/alpine/edge/main/ \
-		&& rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]* /usr/share/icons/Adwaita/cursors /usr/share/icons/gnome/256x256 && \
+        py3-configparser py3-libvirt py3-libxml2 \
+        py3-ipaddr virt-manager-common openssh-askpass \
+        bash libressl dconf grep file gtksourceview4 \
+        dbus-x11 gnome-icon-theme adwaita-icon-theme && \
+    apk add py3-urlgrabber --repository http://dl-3.alpinelinux.org/alpine/edge/main/ \
+        && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]* /usr/share/icons/Adwaita/cursors /usr/share/icons/gnome/256x256 && \
     # Virt-manager wants ssh-askpass without "gtk" in the name
     ln -s /usr/lib/ssh/gtk-ssh-askpass /usr/lib/ssh/ssh-askpass
 
