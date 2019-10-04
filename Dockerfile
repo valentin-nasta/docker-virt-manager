@@ -1,5 +1,5 @@
 # Pull base build image.
-FROM alpine:3.9 AS builder
+FROM alpine:3.10 AS builder
 
 # Add testing repo for ssh-askpass
 RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
@@ -22,7 +22,7 @@ RUN git clone https://github.com/virt-manager/virt-manager.git
 RUN cd virt-manager && ./setup.py configure --prefix=/usr/local && ./setup.py install --exec-prefix=/usr/local
 
 # Pull base image.
-FROM jlesage/baseimage-gui:alpine-3.9
+FROM jlesage/baseimage-gui:alpine-3.10
 
 # Add testing repo for ssh-askpass, add community repo for some python packages
 RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
