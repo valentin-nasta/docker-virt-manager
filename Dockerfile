@@ -29,7 +29,7 @@ RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
     echo "http://dl-3.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories
 
 # Install packages.
-RUN apk add hwids --repository http://dl-3.alpinelinux.org/alpine/edge/main/ \
+RUN apk add hwids --repository http://dl-3.alpinelinux.org/alpine/edge/main/ && \
     apk add \
         py3-configparser py3-libvirt py3-libxml2 \
         py3-ipaddr virt-manager-common openssh-askpass \
