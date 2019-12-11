@@ -12,7 +12,7 @@
   <Overview>Watches for video files, detects and removes the commercials from the video files automatically. No post processing script needed.[br]
 Being based on Alpine Linux, size of this container is very small (less than 50MB in download size).[br]
 Instructions at [a href="https://github.com/djaydev/docker-auto-comskip"]www.github.com/djaydev/docker-auto-comskip[/a]</Overview>
-  <Category>MediaApp:Video Status:Beta</Category>
+  <Category>MediaApp:Video</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://github.com/djaydev/docker-auto-comskip/raw/master/icon.png</Icon>
