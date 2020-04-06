@@ -42,6 +42,7 @@ RUN \
 
 # Copy the start script.
 COPY startapp.sh /startapp.sh
+COPY machineid_fix.sh /etc/cont-init.d/20-machineid_fix.sh
 
 # Copy Virt-Manager from base build image.
 COPY --from=builder /usr/local /usr/local
