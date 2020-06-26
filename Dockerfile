@@ -1,5 +1,5 @@
 # Pull base build image.
-FROM alpine:3.11 AS builder
+FROM alpine:3.12 AS builder
 
 # Install packages.
 RUN apk add \
@@ -20,7 +20,7 @@ RUN git clone https://github.com/virt-manager/virt-manager.git
 RUN cd virt-manager && ./setup.py configure --prefix=/usr/local && ./setup.py install --exec-prefix=/usr/local
 
 # Pull base image.
-FROM jlesage/baseimage-gui:alpine-3.11
+FROM jlesage/baseimage-gui:alpine-3.12
 
 # Install packages.
 RUN apk add \
