@@ -24,12 +24,12 @@ FROM jlesage/baseimage-gui:alpine-3.12
 
 # Install packages.
 RUN apk add \
-        py3-libvirt py3-libxml2 py3-ipaddr py3-cairo py3-requests py3-argcomplete py3-gobject3 \
+        py3-libvirt py3-libxml2 py3-ipaddr py3-cairo py3-requests py3-gobject3 \
         libosinfo libvirt-glib dbus-x11 gtksourceview4 \
         bash libressl dconf grep cdrkit gtk-vnc vte3 \
         gnome-icon-theme adwaita-icon-theme && \
     apk add py3-configparser --repository http://dl-3.alpinelinux.org/alpine/v3.10/community/ && \
-    apk add openssh-askpass --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
+    apk add openssh-askpass py3-argcomplete --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]* /usr/share/icons/Adwaita/cursors /usr/share/icons/gnome/256x256 && \
     # Virt-manager wants ssh-askpass without "gtk" in the name
     ln -s /usr/lib/ssh/gtk-ssh-askpass /usr/lib/ssh/ssh-askpass
