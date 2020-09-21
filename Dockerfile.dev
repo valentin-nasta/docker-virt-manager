@@ -4,7 +4,7 @@ FROM alpine:3.12 AS builder
 # Install packages.
 RUN apk add \
         bash libressl-dev xterm dbus-x11 \
-        py3-gobject3 libosinfo libxml2 build-base python3 \
+        py3-gobject3 libosinfo libxml2 build-base python3 py3-docutils \
         gtk+3.0-dev vte3 py3-libxml2 spice-gtk gtk-vnc py3-cairo\
         ttf-dejavu gnome-icon-theme dconf intltool grep \
         libvirt-glib py3-urlgrabber py3-ipaddr py3-libvirt \
