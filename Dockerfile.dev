@@ -6,10 +6,10 @@ RUN apk add \
         bash libressl-dev xterm dbus-x11 \
         py3-gobject3 libosinfo libxml2 build-base python3 py3-docutils \
         gtk+3.0-dev vte3 py3-libxml2 spice-gtk gtk-vnc py3-cairo\
-        ttf-dejavu gnome-icon-theme dconf intltool grep \
+        ttf-dejavu gnome-icon-theme dconf intltool grep gettext-dev \
         libvirt-glib py3-urlgrabber py3-ipaddr py3-libvirt \
         py3-requests py3-urllib3 py3-chardet py3-certifi py3-idna \
-        perl-dev file git && \
+        perl-dev cdrkit git && \
     apk add openssh-askpass --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]*
 
@@ -24,9 +24,9 @@ FROM jlesage/baseimage-gui:alpine-3.12
 
 # Install packages.
 RUN apk add \
-        py3-libvirt py3-libxml2 py3-ipaddr py3-cairo py3-requests \
-        libosinfo libvirt-glib dbus-x11 gtksourceview4 vte3 \
-        bash libressl dconf grep file gtk-vnc py3-gobject3 \
+        py3-libvirt py3-libxml2 py3-ipaddr py3-cairo py3-requests py3-argcomplete py3-gobject3 \
+        libosinfo libvirt-glib dbus-x11 gtksourceview4 \
+        bash libressl dconf grep cdrkit gtk-vnc vte3 \
         gnome-icon-theme adwaita-icon-theme && \
     apk add py3-configparser --repository http://dl-3.alpinelinux.org/alpine/v3.10/community/ && \
     apk add openssh-askpass --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
