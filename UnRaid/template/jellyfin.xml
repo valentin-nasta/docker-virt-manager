@@ -73,6 +73,11 @@
       <Name>NVIDIA_VISIBLE_DEVICES</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="Webui - HTTP" Target="8096" Default="" Mode="tcp" Description="Webui - Default 8096 (HTTP)" Type="Port" Display="always" Required="false" Mask="false">8096</Config>
@@ -82,6 +87,7 @@
   <Config Name="TV" Target="/tv" Default="" Mode="rw" Description="TV - /tv" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Music -/music" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Cache" Target="/cache" Default="" Mode="rw" Description="Cache Folder" Type="Path" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Nvidia Visible Devices (Optional - Requires Nvidia GPU and Unraid Nvidia build)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Nvidia Visible Devices (Optional - Requires Nvidia GPU and Unraid Nvidia build). Don't forget to add '--runtime=nvidia' to your 'Extra Parameters' in your docker template!" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="Nvidia Driver Capabilities (Optional - Requires Nvidia GPU and Unraid Nvidia build)" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
   <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Appdata" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/jellyfin</Config>
 </Container>
