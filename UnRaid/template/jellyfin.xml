@@ -74,7 +74,7 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>all</Value>
       <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
       <Mode/>
     </Variable>
