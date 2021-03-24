@@ -25,7 +25,7 @@ FROM jlesage/baseimage-gui:alpine-3.12
 # Install packages.
 RUN apk add \
         py3-libvirt py3-libxml2 py3-ipaddr py3-cairo py3-requests py3-gobject3 \
-        libosinfo libvirt-glib dbus-x11 gtksourceview4 \
+        libosinfo libvirt-glib dbus-x11 gtksourceview4 openssh-client \
         bash libressl dconf grep cdrkit gtk-vnc vte3 \
         gnome-icon-theme adwaita-icon-theme && \
     apk add py3-configparser --repository http://dl-3.alpinelinux.org/alpine/v3.10/community/ && \
