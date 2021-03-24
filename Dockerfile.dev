@@ -31,7 +31,7 @@ RUN apk add \
     apk add py3-configparser --repository http://dl-3.alpinelinux.org/alpine/v3.10/community/ && \
     apk add ksshaskpass py3-argcomplete --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     && rm -rf /var/cache/apk/* /tmp/* /tmp/.[!.]* /usr/share/icons/Adwaita/cursors /usr/share/icons/gnome/256x256 \
-    && ln -s /usr/bin/ksshaskpass /usr/lib/ssh/ssh-askpass
+    && mkdir -p /usr/lib/ssh && ln -s /usr/bin/ksshaskpass /usr/lib/ssh/ssh-askpass
 
 # Generate and install favicons.
 RUN \
